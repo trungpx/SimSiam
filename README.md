@@ -22,7 +22,9 @@ pip install -r requirements.txt
 ### Run SimSiam
 
 ```
-CUDA_VISIBLE_DEVICES=0 python main.py --data_dir ../Data/ --log_dir ../logs/ -c configs/simsiam_cifar.yaml --ckpt_dir ~/.cache/ --hide_progress
+1) (old) CUDA_VISIBLE_DEVICES=0 python main.py --data_dir ../Data/ --log_dir ../logs/ -c configs/simsiam_cifar.yaml --ckpt_dir ~/.cache/ --hide_progress
+
+2) (new) CUDA_VISIBLE_DEVICES=0 python main.py --data_dir ./data/ --log_dir ./logs/ -c configs/simsiam_cifar.yaml --ckpt_dir ./cache/ --hide_progress
 ```
 The data folder `../Data/` should look like this:
 ```
